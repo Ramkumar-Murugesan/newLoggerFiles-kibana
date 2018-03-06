@@ -1,0 +1,4 @@
+{
+  "UI-WELCOME_MESSAGE": "Loading Geppetto",
+  "UI-WELCOME_ERROR": "Geppetto did not load properly. Check the server output for more information."
+}

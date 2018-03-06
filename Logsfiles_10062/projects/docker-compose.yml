@@ -1,0 +1,14 @@
+version: '2'
+services:
+  db:
+    container_name: Logsfiles-10062-db
+    build: db
+    image: logsfiles-10062/db
+    ports:
+      - "27017"
+  node:
+    container_name: Logsfiles-10062-web
+    build: desktop
+    image: logsfiles-10062/web
+    ports:
+      - "9090:3000"

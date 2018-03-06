@@ -1,0 +1,18 @@
+{
+  "name": "ClientLog",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon main.js"
+  },
+  "dependencies": {
+    "circular-json": "^0.5.1",
+    "express-winston": "^2.5.0",
+    "geppetto_node_pacakge": "^1.0.0",
+    "logstash": "^2.0.0",
+    "nodemon": "^1.17.1",
+    "winston": "^2.4.0",
+    "winston-daily-rotate-file": "^1.7.2",
+    "winston-levelonly": "^1.0.3"
+  }
+}

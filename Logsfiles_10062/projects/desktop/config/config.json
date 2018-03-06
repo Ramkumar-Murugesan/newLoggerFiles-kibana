@@ -1,0 +1,1 @@
+{"database":{"password":"","dialect":"mongodb","name":"clientlog","host":"localhost","username":""},"jwt":{"jwtSecret":"MyS3cr3tK3Y","jwtSession":{"session":false}}}

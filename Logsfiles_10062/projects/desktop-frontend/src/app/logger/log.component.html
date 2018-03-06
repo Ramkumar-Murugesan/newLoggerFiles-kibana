@@ -1,0 +1,36 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1 col-lg-offset-2">
+                <label>LogLevel: </label>
+            </div>
+            <div class="col-lg-5 col-lg-offset-2">
+                <mat-form-field>
+                    <mat-select placeholder="Select" [(ngModel)]="selectedLogs.level">
+                        <mat-option *ngFor="let log of selectLevel" [value]="log.level">
+
+                            {{log.level}}
+                        </mat-option>
+
+                    </mat-select>
+
+                </mat-form-field>
+            </div>
+        </div>
+        <div style="margin-top: 95px; margin-left: 188px">
+         <!-- <div *ngIf="defaultLog" >
+              default log level is <span style="color: red;">INFO</span>
+         </div> -->
+         <div >
+            <strong> *Current log level is </strong> <span style="color: red;">{{selectedLogs.level | uppercase}}</span>
+         </div>
+        </div>
+            <div class="pull-right" >
+                <button mat-raised-button color="primary" (click)="saveLog()">Save</button>
+                <button mat-raised-button color="warn" routerLink="/home">Cancel</button>
+
+            </div>
+
+      
+    </div>
+</section>
