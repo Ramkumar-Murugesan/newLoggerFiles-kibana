@@ -6,6 +6,7 @@ const env = process.env.NODE_ENV || 'development';
 const logDir = 'log';
 // const levelOnly = require("winston-levelonly");
 const createLogstash = require('logstash');
+require('winston-daily-rotate-file');
 
 // required
 // const url = process.env.LOGSTASH_URL;
@@ -29,7 +30,7 @@ if (!fs.existsSync(logDir)) {
 const tsFormat = () => (new Date()).toLocaleString();
 const logger = new (winston.Logger)({
   transports: [
-    new winston.transports.File({
+    new winston.transports.DailyRotateFile({
       level: loggger.level,
       filename:  logDir + '/logs.log',
       handleExceptions: true,
